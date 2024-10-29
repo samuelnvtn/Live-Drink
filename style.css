@@ -1,4 +1,70 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/source/images/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.top {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  margin-top: 40px;
+  width: 1100px;
+  justify-content: space-around;
+}
+
+.contact p {
+  color: white;
+}
+
+.logo img {
+  height: 27px;
+}
+
+.settings {
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.topnav {
+  margin: 40px auto;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 800px;
+}
+
+.topnav a:hover {
+  color: yellow;
+}
+
+.topnav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.topnav li {
+  margin: 0 15px;
 }
