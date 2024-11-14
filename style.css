@@ -14,8 +14,6 @@
 
 .homepage {
   background-image: url("/source/images/slide-1.jpg");
-
-  /* background-color: #77aa6f; */
   background-size: cover;
 }
 .faq {
@@ -142,7 +140,7 @@
 
 .container3 {
   width: 70%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -165,7 +163,7 @@
 .content3-left-up {
   display: flex;
   border-bottom: 0.5px solid #77aa6f70;
-  padding-bottom: 80px;
+  height: 50%;
   margin: 0px auto;
 }
 
@@ -228,7 +226,7 @@
 .content3-right-up {
   display: flex;
   border-bottom: 0.5px solid #77aa6f70;
-  padding-bottom: 80px;
+  height: 50%;
   margin: 0px auto;
 }
 
@@ -278,6 +276,33 @@
   font-size: 75px !important;
   font-weight: lighter;
   margin-right: 20px;
+}
+
+.container4 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.flavors {
+  margin: 30px auto;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.mango img,
+.strawberry img,
+.apple img,
+.carrots img {
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.481);
 }
 
 /*
