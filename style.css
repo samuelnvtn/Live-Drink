@@ -11,6 +11,15 @@
   background-repeat: no-repeat;
   background-position: center top;
   margin-top: 0px !important; /*co to kurva prepisuje???*/
+  margin-bottom: 0px !important; /*co to kurva prepisuje???*/
+}
+
+.section2 {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: 0px !important; /*co to kurva prepisuje???*/
 }
 
 .homepage {
@@ -19,6 +28,11 @@
 }
 .faq {
   background-image: url("source/images/bg-pattern-1.jpg");
+  background-size: cover;
+}
+
+.numbers {
+  background-image: url("source/images/end.jpg");
   background-size: cover;
 }
 
@@ -368,4 +382,39 @@
 .strike p {
   color: #969696;
   margin-right: 10px;
+}
+
+.container5 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.end-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.end-grid > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end-grid p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.divide {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.divide h1 {
+  margin-bottom: 30px;
 }
