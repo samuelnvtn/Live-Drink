@@ -10,6 +10,7 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center top;
+  margin-top: 0px !important; /*co to kurva prepisuje???*/
 }
 
 .homepage {
@@ -292,24 +293,79 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.products-grid > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 1);
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
+}
+
+.products-grid img {
+  margin-top: 40px;
 }
 
 .mango img,
 .strawberry img,
-.apple img,
-.carrots img {
-  padding: 50px;
-  background-color: rgba(128, 128, 128, 0.481);
+.carrots img,
+.guava img,
+.bananas img {
+  margin-top: 0px;
 }
 
-/*
-background-color: red;
-  width: 800px;
-  height: 100vh;
+.products-grid h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.products-grid p {
+  font-size: 13px;
+  color: #96bd91;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tag-sale p {
   display: flex;
-  flex-direction: column;
-  margin: auto;
-}*/
+  flex-wrap: nowrap;
+  background-color: #f96666;
+  color: white !important;
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-left: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+}
+
+.tag-new p {
+  display: flex;
+  background-color: #94a6ab;
+  color: white !important;
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-left: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+}
+
+.price {
+  display: flex;
+}
+.strike p {
+  color: #969696;
+  margin-right: 10px;
+}
